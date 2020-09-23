@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>music|contact us</title>
+	<meta name="viewport" content="width=device-width" , initial-scale="1.0">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,900|Ubuntu&display=swap" rel="stylesheet">
+
+	<script>
+		function checkname(inputtext) {
+
+			var namecheck = /^[A-Za-z ]/;
+
+			if (namecheck.test(inputtext)) {
+				return true;
+			} else {
+				return false;
+			}
+		}
+
+		function phonenumber(inputtxt) {
+
+			var phoneno = /^\d{10}$/;
+			if (phoneno.test(inputtxt)) {
+				return true;
+			} else {
+
+				return false;
+			}
+		}
+
+		function myFunction() {
+
+			var name, phone, res1, res2;
+
+			// Get the value of the input field with id="numb"
+			name = document.forms["myForm"]["name"].value;;
+			phone = document.forms["myForm"]["phoneno"].value;;
+			// validate the inputs
+			if (name == "") {
+				res1 = "name must be filled";
+				document.getElementById("demo").style.color = "red";
+				document.getElementById("demo").innerHTML = res1;
+			} else {
+				if (checkname(name)) {
+					res1 = "name is valid";
+					document.getElementById("demo").style.color = "green";
+					document.getElementById("demo").innerHTML = res1;
+				} else {
+					res1 = "name is invalid";
+					document.getElementById("demo").style.color = "red";
+					document.getElementById("demo").innerHTML = res1;
+				}
+			}
+
+			if (phonenumber(phone)) {
+				res2 = "phone no is valid";
+				document.getElementById("demo2").style.color = "green";
+				document.getElementById("demo2").innerHTML = res2;
+			} else {
+				res2 = "phone no is not valid";
+				document.getElementById("demo2").style.color = "red";
+				document.getElementById("demo2").innerHTML = res2;
+			}
+
+
+			return false;
+		}
+	</script>
+</head>
+
+<body>
+
+	<div class="nonindex-header">
+		<nav>
+			<div class="main ">
+				<a href="index.html">
+					<h1> MUSIC AND FREEDOM </h1>
+				</a>
+			</div>
+
+			<div class="main2">
+				<ul>
+					<li class="b"><a href="https://en.wikipedia.org/wiki/History_of_music"target="_blank">HISTORY OF MUSIC</a></li>
+					<li class="c"> <a href="https://www.youtube.com/watch?v=rgaTLrZGlk0"target="_blank">LEARN MUSIC</a></li>
+					<li class="d"> <a href="gallery.html">GALLERY</a></li>
+					<li class="f"><a href="faq.html"> (FAQ)</a></li>
+				</ul>
+			</div>
+		</nav>
+		<div class="fullcontainer">
+
+
+			<div class="login">
+				<img src="contactus/avatar.jpg" class="avatar" alt="avatar">
+				<h1> Your Info </h1>
+				<form name="myForm" onsubmit="return myFunction()" method="post">
+					<input id="name" type="text" name="name" placeholder="Enter name"><br />
+					<input id="phoneno" type="text" name="phoneno" placeholder="Enter Phone no"><br />
+					<input type="submit" value="Submit"><br />
+
+				</form>
+				<p class="responsetext" id="demo"></p>
+				<p class="responsetext" id="demo2"></p>
+
+
+
+			</div>
+
+
+			<div class="bottom-container ">
+				<a class="A" href="https://www.linkedin.com/">LinkedIn</a>
+				| <a class="B" href="https://twitter.com/">Twitter</a>
+				| <a class="C" href="https://www.facebook.com/">facebook</a>
+				| <a class="D" href="https://www.appbrewery.co/">Website</a><br>
+				<p1> phone no. +977 98070133386 </p1>
+				<a href="https://www.gmail.com/">
+					<p class="E"> <b>Email us on</b> anmolkarkeeiiiii@gmail.com </p>
+				</a><br>
+				<a href="https://www.google.com/maps/@28.3973819,84.1301498,7z">
+					<p class="F"><b> CLICK HERE FOR LOCATION </b></p>
+				</a><br />
+				<footer class="tablefooter">
+	  				<a class="i" href="index.html">Home</a>
+	  				| <a class="ii" href="gallery.html">gallery</a>
+	  				| <a class="iii" href="contactus.html">contact us</a>
+	          | <a class="v" href="C:\Users\anmol\OneDrive\Desktop\it final assignment\final project\homepage\table.html">Information</a>
+						| <a class="iv" href="faq.html"> FAQ </a> <br>
+							<p><b> MUSIC AND FREEDOM </b></p>
+	            <p> Biratnagar,madhumara-11 </p>
+
+	  				<p><b>© 2020 Anmol Karki</b></p>
+	  		</footer>
+			</div>
+		</div>
+	</div>
+	</header>
+</body>
+
+</html>

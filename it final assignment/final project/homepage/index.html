@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>music|homepage</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,900|Ubuntu&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+	<header class="mainpage">
+		<nav>
+			<div class="main">
+				<h1> MUSIC AND FREEDOM </h1>
+			</div>
+
+			<div class="main2">
+				<ul>
+					<li class="b"><a href="https://en.wikipedia.org/wiki/History_of_music"target="_blank">HISTORY OF MUSIC</a></li>
+					<li class="c"> <a href="https://www.youtube.com/watch?v=rgaTLrZGlk0"target="_blank">LEARN MUSIC</a></li>
+					<li class="d"> <a href="gallery.html">GALLERY</a></li>
+					<li class="e"><a href="contact.html">CONTACT US</a></li>
+					<li class="f"><a href="faq.html"> (FAQ)</a></li>
+				</ul>
+			</div>
+		</nav>
+
+			<section>
+			<div class="slideshow-container">
+				<div class="mySlides fade">
+					<img src="gallery/guitaraa.jpg" alt="A music instrument">
+				</div>
+				<div class="mySlides fade" >
+					<img src="gallery/instrument3.jpg" alt="A  girl playing music instrument ">
+				</div>
+				<div class="mySlides fade" >
+					<img src="gallery/instrument1.jpg" alt="A music instrument">
+				</div>
+			</div>
+			<div style="text-align:center">
+				<span class="dot"></span>
+				<span class="dot"></span>
+				<span class="dot"></span>
+			</div>
+			<script>
+				var slideIndex = 0;
+				showSlides();
+
+				function showSlides() {
+					var i;
+					var slides = document.getElementsByClassName("mySlides");
+					var dots = document.getElementsByClassName("dot");
+					for (i = 0; i < slides.length; i++) {
+						slides[i].style.display = "none";
+					}
+					slideIndex++;
+					if (slideIndex > slides.length) {
+						slideIndex = 1
+					}
+					for (i = 0; i < dots.length; i++) {
+						dots[i].className = dots[i].className.replace(" active", "");
+					}
+					slides[slideIndex - 1].style.display = "block";
+					dots[slideIndex - 1].className += " active";
+					setTimeout(showSlides, 2000); // Change image every 2 seconds
+				}
+			</script>
+			<div class="anotherside">
+				<h1> MUSIC IN OUR HEARTS </h1>
+				<p1>Let the <b>Music</b> Speak!</p1><br>
+				<button> <a href="table.html"> LETS MOVE IN</a> </button>
+			</div>
+		</section>
+		<br />
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d114311.3253142203!2d87.20176660911214!3d26.44834907903558!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39ef744704331cc5%3A0x6d9a85e45c54b3fc!2sBiratnagar%2056613!5e0!3m2!1sen!2snp!4v1600662506662!5m2!1sen!2snp" width="1140" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+		<footer class="footer">
+				<a class="i" href="index.html">Home</a>
+				| <a class="ii" href="gallery.html">gallery</a>
+				| <a class="iii" href="contactus.html">contact us</a>
+				| <a class="v" href="C:\Users\anmol\OneDrive\Desktop\it final assignment\final project\homepage\table.html">Information</a>
+				| <a class="iv" href="faq.html"> FAQ </a> <br>
+				<p><b> MUSIC AND FREEDOM </b></p>
+				<p> Biratnagar,madhumara-11 </p>
+
+				<p><b>© 2020 Anmol Karki</b></p>
+		</footer>
+	</header>
+
+
+</body>
+
+</html>
